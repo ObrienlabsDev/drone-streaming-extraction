@@ -8,7 +8,14 @@ Drone API for Entity Extraction
 - https://cloud.google.com/video-intelligence/docs/streaming/docker-kubernetes
 - https://github.com/google/aistreamer/tree/master
 
+in GCP Shell
 ```
+export DOCKER_IMAGE=gcr.io/drone-ol/drone-ol:0.0.1
+git clone https://github.com/google/aistreamer.git
+cd aistreamer/ingestion/
+docker build -t $DOCKER_IMAGE -f env/Dockerfile .
+  
+4 min
 ------
  > [ 4/28] RUN easy_install pip:
 #0 0.492 Searching for pip
