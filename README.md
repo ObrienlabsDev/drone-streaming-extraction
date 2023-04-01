@@ -31,6 +31,10 @@ https://hub.docker.com/r/tiangolo/nginx-rtmp/
 
 <img width="501" alt="Screenshot 2023-04-01 at 10 01 35" src="https://user-images.githubusercontent.com/24765473/229293737-a3b192fc-3b25-491b-ab16-6aaebfd14858.png">
 
+### Test view with VLC
+
+http://get.videolan.org/vlc/3.0.18/macosx/vlc-3.0.18-arm64.dmg
+
 ## rtmp processor (gcp pipeline)
 - https://codelabs.developers.google.com/mediacdn-ls-codelab#0
 - https://cloud.google.com/livestream/docs/overview
