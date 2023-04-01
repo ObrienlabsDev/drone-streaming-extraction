@@ -14,6 +14,15 @@ Drone API for Entity Extraction
 
 check https://hub.docker.com/r/tiangolo/nginx-rtmp/
 
+On i7-8700 Mac Mini (bare metal Ubuntu 22.04)
+```
+sudo apt install docker.io
+sudo usermod -aG docker ubuntu
+sudo reboot now
+
+```
+
+
 ## rtmp processor (gcp pipeline)
 - https://codelabs.developers.google.com/mediacdn-ls-codelab#0
 - https://cloud.google.com/livestream/docs/overview
