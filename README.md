@@ -1,10 +1,18 @@
 # drone-streaming-extraction
 Drone API for Entity Extraction
 
+# Architecture
+
+- rtmp source (drone)
+- rtmp backend (gcp container)
+- rtmp processor/pipeline (client 1 of n)
+
+
 # Experimentation around the RTMP protocol
 - https://codelabs.developers.google.com/mediacdn-ls-codelab#0
 - https://cloud.google.com/livestream/docs/overview
-- https://cloud.google.com/video-intelligence/docs/streaming/live-streaming
+
+- rtmp server to processor  https://cloud.google.com/video-intelligence/docs/streaming/live-streaming
 - https://cloud.google.com/video-intelligence/docs/streaming/docker-kubernetes
 - https://github.com/google/aistreamer/tree/master
 
