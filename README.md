@@ -9,6 +9,10 @@ Drone API for Entity Extraction
 
 
 # Experimentation around the RTMP protocol
+## rtmp backend (F5 Nginx)
+- https://www.nginx.com/blog/video-streaming-for-remote-learning-with-nginx/
+
+## rtmp processor (gcp pipeline)
 - https://codelabs.developers.google.com/mediacdn-ls-codelab#0
 - https://cloud.google.com/livestream/docs/overview
 
