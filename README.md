@@ -19,9 +19,17 @@ On i7-8700 Mac Mini (bare metal Ubuntu 22.04)
 sudo apt install docker.io
 sudo usermod -aG docker ubuntu
 sudo reboot now
+ubuntu@mini5:~$ docker run -d -p 1935:1935 --name nginx-rtmp tiangolo/nginx-rtmp
+ubuntu@mini5:~$ docker ps
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+cd5ebbac51a3   tiangolo/nginx-rtmp   "nginx -g 'daemon of…"   5 seconds ago   Up 2 seconds   0.0.0.0:1935->1935/tcp, :::1935->1935/tcp   nginx-rtmp
 
 ```
 
+### Test with OBS
+https://hub.docker.com/r/tiangolo/nginx-rtmp/
+
+<img width="501" alt="Screenshot 2023-04-01 at 10 01 35" src="https://user-images.githubusercontent.com/24765473/229293737-a3b192fc-3b25-491b-ab16-6aaebfd14858.png">
 
 ## rtmp processor (gcp pipeline)
 - https://codelabs.developers.google.com/mediacdn-ls-codelab#0
