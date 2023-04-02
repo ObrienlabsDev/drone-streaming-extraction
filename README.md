@@ -19,6 +19,7 @@ Drone API for Entity Extraction
 - check https://hub.docker.com/r/tiangolo/nginx-rtmp/
 - On i7-8700 Mac Mini (bare metal Ubuntu 22.04)
 
+#### RTMP on Bare Metal
 ```
 sudo apt install docker.io
 sudo usermod -aG docker ubuntu
@@ -53,6 +54,27 @@ switched hotspot from iphone to ipad
 24.114.94.29 [01/Apr/2023:21:39:53 +0000] PLAY "live" "drone" "" - 492 18003597 "" "LNX 9,0,124,2" (11m 28s)
 
 ```
+
+### Google Cloued Run
+
+https://nginx-rtmp-kkxj4lcnsa-uc-old.a.run.app
+
+```
+gcloud run deploy nginx-rtmp \
+--image=tiangolo/nginx-rtmp \
+--allow-unauthenticated \
+--port=1935 \
+--service-account=452219143276-compute@developer.gserviceaccount.com \
+--cpu=2 \
+--memory=1Gi \
+--min-instances=1 \
+--max-instances=4 \
+--no-cpu-throttling \
+--execution-environment=gen2 \
+--region=us-central1 \
+--project=drone-ol
+```
+
 
 ### Test with OBS
 https://hub.docker.com/r/tiangolo/nginx-rtmp/
