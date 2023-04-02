@@ -55,13 +55,34 @@ switched hotspot from iphone to ipad
 
 ```
 
-### Google Cloued Run
+### Google Cloud Run
+
+- move the dockerhub image to artifact registry
+```
+docker pull tiangolo/nginx-rtmp
+gcloud artifacts repositories create $AR_PIPELINE_NAME --location=$REGION --repository-format=docker
+check repo
+gcloud artifacts repositories describe rtmp-pipeline-csr --project=drone-ol --location=$REGION
+
+northamerica-northeast1-docker.pkg.dev/drone-ol/rtmp-pipeline-csr
+
+add permissions as per helper
+gcloud auth configure-docker northamerica-northeast1-docker.pkg.dev
+    
+add artifiact registry administrator
+docker tag tiangolo/nginx-rtmp:latest ${REGION}-docker.pkg.dev/drone-ol/$AR_PIPELINE_NAME/rtmp-pipeline-csr:latest
+docker push ${REGION}-docker.pkg.dev/drone-ol/$AR_PIPELINE_NAME/$AR_PIPELINE_NAME:latest
+
+```
+<img width="1485" alt="Screenshot 2023-04-02 at 13 58 37" src="https://user-images.githubusercontent.com/24765473/229370411-1967da4a-1de4-449e-a08c-2bcc50aabd14.png">
+
+
 
 https://nginx-rtmp-kkxj4lcnsa-uc-old.a.run.app
 
 ```
 gcloud run deploy nginx-rtmp \
---image=tiangolo/nginx-rtmp \
+--image=gcr.io/drone-ol/rtmp-pipeline-csr@sha256:e349d276df7319b668c3155cd4ef5255cd1fc0c520dc119bd7dea004580a22fc \
 --allow-unauthenticated \
 --port=1935 \
 --service-account=452219143276-compute@developer.gserviceaccount.com \
@@ -73,8 +94,20 @@ gcloud run deploy nginx-rtmp \
 --execution-environment=gen2 \
 --region=us-central1 \
 --project=drone-ol
+
 ```
 
+### Google Cloud Compute Engine
+
+add firewall rules
+```
+gcloud compute --project=drone-ol firewall-rules create rtmp --description=rtmp --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:1935 --source-ranges=0.0.0.0/0
+gcloud compute --project=drone-ol firewall-rules create rtmp-out --description="rtmp out" --direction=EGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:1935 --destination-ranges=0.0.0.0/0
+```
+
+```
+gcloud compute instances create-with-container rtmp --project=drone-ol --zone=northamerica-northeast1-a --machine-type=e2-medium --network-interface=network-tier=PREMIUM,subnet=default --maintenance-policy=MIGRATE --provisioning-model=STANDARD --service-account=452219143276-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --tags=http-server,https-server --image=projects/cos-cloud/global/images/cos-stable-101-17162-127-51 --boot-disk-size=10GB --boot-disk-type=pd-balanced --boot-disk-device-name=rtmp --container-image=gcr.io/drone-ol/rtmp-pipeline-csr@sha256:e349d276df7319b668c3155cd4ef5255cd1fc0c520dc119bd7dea004580a22fc --container-restart-policy=always --container-privileged --no-shielded-secure-boot --shielded-vtpm --shielded-integrity-monitoring --labels=ec-src=vm_add-gcloud,container-vm=cos-stable-101-17162-127-51
+```
 
 ### Test with OBS
 https://hub.docker.com/r/tiangolo/nginx-rtmp/
