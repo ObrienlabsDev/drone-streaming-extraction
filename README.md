@@ -1,5 +1,6 @@
 # drone-streaming-extraction
-Drone API for Entity Extraction
+- see https://github.com/CloudLandingZone/poc-gcp-serverless-drone-stream-ai
+- Drone API for Entity Extraction
 
 # Architecture
 
