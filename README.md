@@ -9,10 +9,19 @@
 ### Use Cases Diagram
 
 ```mermaid
-graph TD;
-   
-    Drone-->GPS;
-    Drone-based-iOS-Phone-->GPS;
+graph LR;
+    GPS-SATs-->Drone;
+    Drone-->Drone-Controller;
+    Drone-Controller-->RTMP-Producer;
+    Drone-Controller-->Local-WIFI-server;
+    GPS-SATs-->Drone-based-iOS-Phone;
+    RTMP-Producer-->RTMP-Server;
+    
+    RTMP-Server-->GCP-Video-AI;
+    
+    Drone-based-iOS-Phone-->Blackbox-frontend;
+    Blackbox-frontend-->Blackbox-backend;
+    Blackbox-backend-->timing/DB-queue;
     
 ```
 [mermaid - diagrams as code](https://mermaid-js.github.io/mermaid/#/flowchart?id=graph)
