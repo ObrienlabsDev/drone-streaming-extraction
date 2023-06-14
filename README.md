@@ -23,6 +23,8 @@ graph LR;
     Blackbox-frontend-->Blackbox-backend;
     Blackbox-backend-->timing/DB-queue;
     
+    Firestore-NoSQL-DB;
+    
 ```
 [mermaid - diagrams as code](https://mermaid-js.github.io/mermaid/#/flowchart?id=graph)
 
@@ -87,6 +89,8 @@ Vertex AI data prep
 ## DI 1: GCP Infrastructure Design
 ## DI 2: Realtime or Offline Processing
 ## DI 3: RTMP: Streaming Video Processing
+## DI 10: Backend Database Options
+- Firestore (NoSQL) - native mode - https://cloud.google.com/datastore/docs/firestore-or-datastore
 
 - Experimentation around the RTMP protocol
 ### Test Locally on docker inside on-prem network
