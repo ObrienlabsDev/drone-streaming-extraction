@@ -276,6 +276,10 @@ There is an iphone FLIR camera available.
 # FinOps
 
 # Field Testing
+## In office
+### 20230614: GCP VM
+![Screenshot 2023-06-14 at 16 41 04](https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/552df8fd-982e-44dc-aa1d-292338e9835f)
+
 
 # Links
 
