@@ -1,4 +1,5 @@
 # drone-streaming-extraction
+- Blog:  https://github.com/ObrienlabsDev/blog/wiki/Drone-Streaming-Extraction
 - see https://github.com/CloudLandingZone/poc-gcp-serverless-drone-stream-ai
 - Drone API for Entity Extraction
 
