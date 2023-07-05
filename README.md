@@ -278,7 +278,13 @@ There is an iphone FLIR camera available.
 
 # Field Testing
 ## In office
-### 20230614: GCP VM
+### 20230614: GCP VM and RTMP
+
+
+<img width="875" alt="Screenshot 2023-07-04 at 21 43 06" src="https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/c64153bb-281c-4e97-8d2d-d9fd62fb6fae">
+
+<img width="794" alt="Screenshot 2023-07-04 at 21 44 54" src="https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/42fe93cf-cbb8-4fe2-a3bb-0d9e5a8ceb57">
+
 ![Screenshot 2023-06-14 at 16 41 04](https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/552df8fd-982e-44dc-aa1d-292338e9835f)
 
 
