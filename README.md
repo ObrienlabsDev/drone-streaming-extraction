@@ -3,6 +3,7 @@
 - see https://github.com/CloudLandingZone/poc-gcp-serverless-drone-stream-ai
 - Drone API for Entity Extraction
 - https://cloud.google.com/video-intelligence
+- https://cloud.google.com/blog/products/data-analytics/pubsub-cloud-storage-subscriptions-for-streaming-data-ingestion
 
 
 
