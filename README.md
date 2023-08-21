@@ -2,6 +2,7 @@
 - Blog:  https://github.com/ObrienlabsDev/blog/wiki/Drone-Streaming-Extraction
 - see https://github.com/CloudLandingZone/poc-gcp-serverless-drone-stream-ai
 - Drone API for Entity Extraction
+- https://cloud.google.com/video-intelligence
 
 
 
@@ -291,6 +292,7 @@ There is an iphone FLIR camera available.
 # Links
 - Google Brain - Transformer paper "Attention is all you need" https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
 - Tracking Objects in Video - https://arxiv.org/pdf/2304.11968v2.pdf from https://www.linkedin.com/pulse/google-io-updates-training-65b-model-single-gpu-hf-agent-cherukuri
+  https://cloud.google.com/video-intelligence
 # References
 - https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/04_MediaCapture.html
 - 
