@@ -294,6 +294,11 @@ There is an iphone FLIR camera available.
 - Google Brain - Transformer paper "Attention is all you need" https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
 - Tracking Objects in Video - https://arxiv.org/pdf/2304.11968v2.pdf from https://www.linkedin.com/pulse/google-io-updates-training-65b-model-single-gpu-hf-agent-cherukuri
   https://cloud.google.com/video-intelligence
+
+# NVidia Training
+- https://nvdam.widen.net/s/brxsxxtskb/dli-learning-journey-2009000-r5-web
+- <img width="1791" alt="Screenshot 2023-09-03 at 12 34 29" src="https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/30c02662-14ab-414f-b927-7cab71b97f64">
+
 # References
 - https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/04_MediaCapture.html
 - 
