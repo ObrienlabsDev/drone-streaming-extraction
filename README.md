@@ -279,6 +279,13 @@ There is an iphone FLIR camera available.
 # FinOps
 
 # Field Testing
+
+## Lidar from Iphone 14 pro attached to drone
+<img width="1327" alt="Screenshot 2023-10-29 at 13 53 03" src="https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/cadb84af-4b92-490e-b07d-e91650b04635">
+
+<img width="1310" alt="Screenshot 2023-10-29 at 13 52 35" src="https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/85078f80-081c-4165-95bc-29d1f4b9421a">
+
+
 ## In office
 ### 20230614: GCP VM and RTMP
 
