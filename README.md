@@ -289,6 +289,12 @@ There is an iphone FLIR camera available.
 
 ![Screenshot 2023-06-14 at 16 41 04](https://github.com/ObrienlabsDev/drone-streaming-extraction/assets/24765473/552df8fd-982e-44dc-aa1d-292338e9835f)
 
+# Streaming Video Intelligence
+researching
+- https://cloud.google.com/video-intelligence/docs/streaming/streaming
+- https://cloud.google.com/video-intelligence/docs/streaming/live-streaming-overview
+- https://cloud.google.com/video-intelligence/docs/streaming/live-object-tracking
+- 
 
 # Links
 - Google Brain - Transformer paper "Attention is all you need" https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
