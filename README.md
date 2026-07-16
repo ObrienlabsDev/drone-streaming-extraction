@@ -315,5 +315,5 @@ researching
 
 # References
 - https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/04_MediaCapture.html
-- 
+- https://www.canada.ca/en/department-national-defence/news/2026/07/minister-mcguinty-announces-new-drone-production-in-quebec.html
 
